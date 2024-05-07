@@ -1,0 +1,46 @@
+<!--hotel-->
+<!-- top -->
+<view style=" display: flex;background: #FFFFFF;">
+  <image style="height: 2em;width: calc(100%/10);align-self: center;" src="../img/pear/1.svg" mode="aspectFit" />
+  <view class="text-bar-middle-big-black" style="width: calc(100%/10*4); padding: 0 0.5em;">订酒店</view>
+  <view style="width: calc(100%/10); display: flex; flex-direction: column; padding-left: 3em;">
+    <image style="width: 28.02px;height: 26.91px;" src="../img/hotel/rng.svg" mode="aspectFit" />
+    <view>客服</view>
+  </view>
+  <view style="width: calc(100%/10); display: flex;flex-direction: column; padding-left: 1em;">
+    <image style="width: 28.02px;height: 26.91px; " src="../img/hotel/asd.svg" mode="aspectFit" />
+    <view>订单</view>
+  </view>
+</view>
+<!-- search -->
+<view style="display: flex;flex-direction: row;justify-content: flex-start;padding: 1em 2em;--size: 20px;background:#EFEFEF;border-radius: 2em;">
+  <image style="width: var(--size);height: var(--size); align-self: flex-end;" src="../img/public/search.png" mode="aspectFit" />
+  <view style="padding: 0.05em 1em;">content</view>
+</view>
+<!-- all hotel -->
+<view style="display: flex;flex-direction: row;justify-content: space-around; padding: 1em 0;">
+  <view style="background:blue; color:#FFFFFF; border-radius: 8px;padding: 0.25em;">All Hotel</view>
+  <view style="color: blue; border-radius: 8px;padding: 0.25em; border: 1px solid #EFEFEF;">Recommended</view>
+  <view style="color: blue; border-radius: 8px;padding: 0.25em; border: 1px solid #EFEFEF;">Popular</view>
+</view>
+<!-- Filtered  -->
+<view style="display: flex;flex-direction: column;padding: 0 0.75em;">
+  <view class="text-bar-sy" style="align-self: flex-start; ">Filtered (2,379)</view>
+  <!-- for  Poulton Hotel -->
+  <view wx:for="{{4}}" style="display: flex;flex-direction: row; padding: 2em 1em;">
+    <image style="width: 80px; height: 87px;  border-radius: 1em; text-align: center;" src="../img/hotel/hotel.svg" mode="aspectFit" />
+    <view style="width:100%-80px; display: flex; flex-direction: column;justify-content: space-between;padding: 0 1em;">
+      <view class="text-bar-sy">Poulton Hotel</view>
+      <view style="display: flex;flex-direction: row;">
+        <view class="text-small" style="padding-right: 1em;">Florida, USA</view>
+        <image style="width: 9px;height: 9px; align-self:center;" src="../img/hotel/star.svg" mode="aspectFit" />
+        <view class="text-small">4.8</view>
+      </view>
+      <view style="display: flex;flex-direction: row;">
+        <view style="color: #585DE4; line-height: 30px;font-size: 20px;font-weight: 600;font-family:Barlow;">$35</view>
+        <view style=" align-self: center; color: #2C2D39;line-height: 16px; font-size: 12px; font-weight: 400;">/night</view>
+      </view>
+    </view>
+    <image style="width: 14.4px;height: 16px; align-self: flex-end; padding-left: 2em;" src="../img/hotel/ace.svg" />
+  </view>
+</view>

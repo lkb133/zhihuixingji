@@ -1,0 +1,37 @@
+<!-- top-search -->
+<view class='justify-content-center align-items-center display-flex'>
+  <view class='padding-right-15 padding-left-15 display-flex justify-content-space-between' style="  width: 330px;height: 35px;border-radius: 20px;background-color: #FFFFFF;">
+    <image style='height:30px;width:30px; ' src="../img/public/search.png" mode="aspectFit" />
+    <view> content </view>
+    <image style="height:30px;width:30px;" src="../img/public/richscan.png" mode="aspectFit" />
+  </view>
+</view>
+<!-- map -->
+<map style="width: 100%;height: 22em;" longitude="{{longitude}}" latitude="{{latitude}}" />
+<!-- car -->
+<view style="display: flex; flex-direction: row; height: 2.75em;background-color: #C4C4C4; justify-content: space-around; border-radius: 20px;padding:0.25em 0;">
+  <view wx:for="{{ad}}" class='text-siyuan-modle-middle' style="width: calc(100%/4); background-color: #FFFFFF; border-radius: 20px; text-align:center;padding: 0.65em 0;">
+    {{item}}
+  </view>
+</view>
+<!--  导航 -->
+<view style="display: flex;justify-content: center; --size:48px; padding: 1.5em 0;">
+  <image style="width: var(--size); height: var(--size);" src="../img/navigation/1.svg" mode="aspectFit" />
+  <view class="text-mod" style="align-self: center; padding: 0 2em;">地点(我的位置)</view>
+</view>
+<view wx:for="{{2}}" style="display: flex;justify-content: center; padding: 1em 0;">
+  <view style="display:flex; flex-direction: column;">
+    <view style="position: relative; width: 40px; height: 120px; background: #1D90E1; display: flex;flex-direction: column; justify-content: space-between;--size:40px;border-radius: 18px 18px 0 0; ">
+      <view style="width: var(--size);height: var(--size); background:#FFFFFF; border-radius: 50%; display: flex; justify-content: center; border:1px solid #1D90E1;">
+        <image style=" align-self: center; width: 100%;height:100%;" src="../img/navigation/2.svg" mode="aspectFit" />
+      </view>
+      <view style="position: absolute; width: var(--size);height: var(--size); background:#FFFFFF; border-radius: 50%;top: 74%; left: -1%; border:1px solid #1D90E1 ;"></view>
+    </view>
+  </view>
+  <view style="display: flex;flex-direction: column; justify-content: space-between;padding:0 4.25em">
+    <view class="text-mod">周师站</view>
+    <view style="width: 35px;height: 20px; background:#371CE1;border-radius: 3px;color: #FFFFFF;text-align: center;font-size: 14px;">11路</view>
+    <view class="text-mod-small" style="padding-top: 1em;">约12分钟/趟</view>
+    <view class="text-mod">郑州机场</view>
+  </view>
+</view>

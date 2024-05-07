@@ -1,0 +1,20 @@
+<!--you hui quan-->
+<view wx:for="{{6}}" style="padding: 0.5em 1em;">
+  <view style="display: flex;flex-direction: row;justify-content: space-around; padding: 0.5em 1em; background: #FDF5F6; border-radius: 6px;">
+    <view style="width: calc(100%/10*3);  display: flex;flex-direction: column;">
+      <view style="display: flex;flex-direction: row;justify-content: center;">
+        <view class="text-yahe-modile-small-red" style="align-self: flex-end; padding-bottom: 0.25em;">￥</view>
+        <view class="text-yahe-modile-big-red">128</view>
+      </view>
+      <view class="text-yahe-modile-small-red" style="align-self: center; font-size: 12px;font-weight: 400;line-height: 16px;">满2799可用</view>
+    </view>
+    <view style="width: calc(100%/10*6);display: flex;flex-direction: column;justify-content: flex-start; ">
+      <view style="align-self: flex-start; padding: 0 1em;">新客专属</view>
+      <view class="text-yahe-modile-small-gray" style="align-self: center; padding: 1.5em 0; ">04.01 00:00:00 - 04.30 23:59</view>
+    </view>
+    <!-- 圈圈 -->
+    <view style="width: calc(100%/10*1);  align-self: center;">
+      <view style="width: 1em;height: 1em; border-radius: 50%; border: 1px solid black;"></view>
+    </view>
+  </view>
+</view>

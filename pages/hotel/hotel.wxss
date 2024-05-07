@@ -1,0 +1,29 @@
+/* pages/hotel/hotel.wxss */
+.text-bar-middle-big-black {
+  color: rgb(0, 0, 0);
+  font-family: Barlow;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0px;
+}
+
+.text-bar-sy {
+  color: rgb(44, 45, 57);
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text-small {
+  color: rgba(44, 45, 57, 0.5);
+  font-family: Barlow;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}

@@ -1,0 +1,18 @@
+/* pages/navigation/navigation.wxss */
+.text-mod {
+  color: rgb(0, 0, 0);
+  font-family: 思源黑体;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+
+.text-mod-small {
+  color: rgb(220, 220, 220);
+  font-family: 思源黑体;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}

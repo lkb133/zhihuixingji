@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/navigation/navigation",
+    "pages/vip/vip",
+    "pages/pear/pear",
+    "pages/quan/quan",
+    "pages/hotel/hotel"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#FFFFFF"
+  },
+  "usingComponents": {},
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "navigationBarTitleText": "页面标题",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取位置"
+    }
+  }
+}

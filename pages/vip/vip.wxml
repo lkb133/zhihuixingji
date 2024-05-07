@@ -1,0 +1,32 @@
+<image style="width: 100%; height: 5em;" src="../img/vip/vip.svg" mode="aspectFit" />
+<!-- text -->
+<view style="width: 100%; height: auto; background-color: #EFEFEF; display: flex;flex-direction: column;">
+  <view>会员专享</view>
+  <text>1............................................
+    2............................................
+    3............................................
+    4.............................................
+    5.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  </text>
+</view>
+<!-- 月卡 -->
+<view style="width: 100%; display: flex;flex-direction: row; justify-content: space-around; background-color: #FFFFFF;padding: 0.5em 0;">
+  <view wx:for="{{vip}}" style="display: flex;flex-direction: column;justify-content: center; background-color: #{{item.color}};  padding: 1em ; border-radius: 10px;">
+    <view class="text-yahe-modle-small-black">{{item.year}}</view>
+    <view style="display: flex;flex-direction: row;justify-content:center;">
+      <view class="text-vip-siyuan-small-black" style="align-self: center;">￥</view>
+      <view class="text-vip-siyuan-middle-black">{{item.daolor}}</view>
+    </view>
+    <view class="text-vip-yahe-small-gray">原价￥{{item.daollor}}</view>
+  </view>
+</view>
+<!-- AD -->
+<view class="text-vip-yahe-middle-yellow" style="width: 100%;height: 3em;background-color: #E9E513; display: flex; justify-content: center; align-items:center; ">新用户享7天免费VIP点击领取</view>
+<!-- 最后2行 -->
+<view style="width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;padding: 1em 0; background-color: #1c3679;">
+  <view wx:for="{{middle}}" wx:key="index" style="width: calc(100% / 5);display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 0.5em 0;">
+    <image style="width: 38px;height: 38px; border-radius: 8px; " src="{{item.path}}" mode="aspectFit" />
+    <view class='text-siyuan-modle-small' style="white-space: nowrap; align-self: center; line-height: 1.5em;color: #FFFFFF;padding: 0.5em 0;">{{item.name}}</view>
+    <view class="text-vip-yahe-small-gray" style="align-self:center; color: #FFFFFF; ">{{item.text}}</view>
+  </view>
+</view>

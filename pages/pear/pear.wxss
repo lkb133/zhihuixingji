@@ -1,0 +1,10 @@
+/* pages/pear/pear.wxss */
+page {
+  background: #EFEFEF;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
